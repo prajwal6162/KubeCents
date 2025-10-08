@@ -14,7 +14,7 @@ function RegisterPage() {
     // For now, we simulate a successful registration
     console.log("Form submitted. Simulating registration...");
     alert("Registration successful! Redirecting to login...");
-    setTimeout(() => navigate('/login'), 1500);
+    setTimeout(() => navigate('/setup'), 1500);
   };
 
   return (
