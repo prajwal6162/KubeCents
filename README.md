@@ -49,6 +49,6 @@ KubeCents leverages a **modular, cloud-native architecture**:
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/kubecents.git
+git clone https://github.com/prajwal6162/kubecents.git
 cd kubecents
 
