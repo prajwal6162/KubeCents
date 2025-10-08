@@ -1,0 +1,76 @@
+# =================================================================
+# General - System & IDE files
+# =================================================================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sublime-*
+
+
+# =================================================================
+# Backend - Python / FastAPI
+# =================================================================
+# Virtual Environments - IMPORTANT
+venv/
+.venv/
+env/
+__pypackages__/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# SQLite Database Files
+# NEVER commit your database file!
+*.db
+*.sqlite
+*.sqlite3
+
+# Distribution / packaging
+.eggs/
+*.egg-info/
+dist/
+build/
+*.tar.gz
+*.whl
+
+
+# =================================================================
+# Frontend - React / Vite
+# =================================================================
+# Dependencies - VERY IMPORTANT
+node_modules/
+
+# Build output folder
+# Vite's default build directory is 'dist'
+dist/
+
+# Logs
+npm-debug.log*
+yarn-error.log
+yarn-debug.log
+pnpm-debug.log
+
+# Environment variables
+# NEVER commit your secret keys!
+.env
+.env.*
+!.env.example # But DO commit the example file for others
+
+# Vite-specific cache
+.vite/
+# Optional: Coverage reports from testing
+coverage/
