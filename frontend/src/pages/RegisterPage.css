@@ -1,0 +1,230 @@
+/* src/pages/RegisterPage.css */
+/* Uses variables from your global index.css or HomePage.css */
+
+.register-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--primary-bg);
+    padding: 2rem;
+  }
+  
+  .register-container {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* --- Left Column: Info --- */
+  .register-info {
+    flex-basis: 45%;
+    padding: 4rem;
+    background: linear-gradient(-45deg, #1e3a8a, #0d0f11); /* Gradient background */
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .info-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-decoration: none;
+    margin-bottom: 2rem;
+  }
+  
+  .info-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .info-description {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
+  
+  .info-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+  }
+  
+  .info-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .feature-icon {
+    color: var(--accent-green);
+    font-size: 1.2rem;
+  }
+  
+  .info-trusted {
+    margin-top: auto; /* Pushes to the bottom */
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+  
+  /* --- Right Column: Form --- */
+  .register-form-wrapper {
+    flex-basis: 55%;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .register-form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .register-form h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .register-form > p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+  }
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: var(--primary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .form-group input:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+  }
+  
+  .password-wrapper {
+    position: relative;
+  }
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .form-group.terms {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  .form-group.terms input {
+    margin-right: 0.5rem;
+  }
+  .form-group.terms a {
+    color: var(--accent-blue);
+    text-decoration: none;
+  }
+  .form-group.terms a:hover {
+    text-decoration: underline;
+  }
+  
+  .btn-submit {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--accent-blue);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 1rem;
+  }
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: var(--text-secondary);
+  }
+  .login-link a {
+    color: var(--accent-blue);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* --- Responsive Design --- */
+  @media (max-width: 992px) {
+    .register-container {
+      flex-direction: column;
+    }
+    .register-info {
+      flex-basis: auto;
+      text-align: center;
+    }
+    .register-form-wrapper {
+      flex-basis: auto;
+      padding: 3rem 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+      .form-row {
+          flex-direction: column;
+          gap: 0;
+      }
+  }
