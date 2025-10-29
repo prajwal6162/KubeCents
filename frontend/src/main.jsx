@@ -7,6 +7,7 @@ import RegisterPage from './pages/RegisterPage';
 import LoginPage from './pages/LoginPage'
 import './index.css'; // Global styles
 
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
     path: '/register',
     element: <RegisterPage />,
   },
+ 
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
