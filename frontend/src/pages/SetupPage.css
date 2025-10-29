@@ -1,0 +1,155 @@
+/* src/pages/SetupPage.css */
+
+.setup-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: var(--primary-bg);
+  padding: 4rem 2rem;
+}
+
+.setup-container {
+  width: 100%;
+  max-width: 900px;
+}
+
+.setup-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.setup-header h1 {
+  font-size: 2.8rem;
+  color: var(--text-primary);
+}
+.setup-header p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.step-card {
+  display: flex;
+  gap: 2rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2.5rem;
+  transition: box-shadow 0.2s ease;
+}
+.step-card:hover {
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.1);
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--accent-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.step-content {
+  width: 100%;
+}
+.step-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.step-content p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+.step-content h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.code-block-wrapper {
+  position: relative;
+}
+.code-block {
+  background-color: var(--primary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  color: #c9d1d9; /* Light gray for code */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Courier New', Courier, monospace;
+}
+.copy-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #333;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+.copy-button:hover {
+  background-color: #444;
+  color: var(--text-primary);
+}
+.copy-button svg {
+  color: var(--accent-green);
+}
+
+.arn-form {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+.arn-form input {
+  flex-grow: 1;
+  padding: 12px 15px;
+  background-color: var(--primary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+.arn-form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--accent-green);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .step-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .step-number {
+    margin: 0 auto;
+  }
+  .step-content h3 {
+    justify-content: center;
+  }
+  .arn-form {
+    flex-direction: column;
+  }
+}

@@ -115,7 +115,7 @@ function HomePage() {
           <div className="feature-card-new explore-docs-card">
             <h3>Explore the docs</h3>
             <p>Learn how to connect your AWS account, install the agent, and start tracking costs in minutes.</p>
-            <a href="#" className="btn btn-explore-docs">Read docs</a>
+            <Link to="/setup" className='btn btn-explore-docs'>Read docs</Link>
           </div>
         </div>
       </section>
